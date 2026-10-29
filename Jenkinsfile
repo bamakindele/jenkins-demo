@@ -2,10 +2,8 @@ pipeline{
     agent any 
     environment{
         DOCKERHUB_USERNAME = "tech365"
-        IMAGE_NAME = "${DOCKERHUB_USERNAME}/nodejs-cicd-app"
-        APP_SERVER = "ec2-54-82-61-48.compute-1.amazonaws.com"
+        IMAGE_NAME = "${DOCKERHUB_USERNAME}/nodejs-cicd-app2"
         APP_PORT = "3000"
-        APP_USER = "ec2-user"
         CONTAINER_NAME = "nodejs-apps"
     }
     stages{
